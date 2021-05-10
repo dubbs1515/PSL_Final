@@ -5,7 +5,9 @@ account: dubbs
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 4105699
-bundleId: 4578701
+bundleId: 4579272
 url: https://dubbs.shinyapps.io/movierecomapp/
-when: 1620609325.39055
-lastSyncTime: 1620609325.39056
+when: 1620624029.41721
+lastSyncTime: 1620624029.41722
+asMultiple: FALSE
+asStatic: FALSE

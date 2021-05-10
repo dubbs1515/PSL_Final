@@ -4,8 +4,6 @@
 
 library(shiny)
 library(shinydashboard)
-library(recommenderlab)
-library(data.table)
 library(ShinyRatingInput)
 library(shinyjs)
 
@@ -59,7 +57,8 @@ shinyUI(
                           # TAB 2: RECOMMENDATIONS BY RATINGS
                           tabItem(tabName = "rating",
                                   fluidRow(
-                                      box(width = 12, title = "Step 1: Rate Movies", status = "info", solidHeader = TRUE, collapsible = TRUE,
+                                      box(width = 12, title = "Step 1: Rate Movies", status = "info", solidHeader = TRUE,
+                                          collapsible = TRUE,
                                           div(class = "rateitems",
                                               uiOutput('ratings')
                                           )
@@ -72,7 +71,7 @@ shinyUI(
                                           title = "Step 2: Get Movies Recommended For You",
                                           br(),
                                           withBusyIndicatorUI(
-                                              actionButton("btn2", "GO", class = "btn-secondary", icon = icon("search"))
+                                              actionButton("btn2", "GO", class = "btn-primary", icon = icon("search"))
                                           ),
                                           br(),
                                           tableOutput("results2")

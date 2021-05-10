@@ -1,0 +1,73 @@
+---
+title: "Project 4 Report"
+author: "Christopher Dubbs (cdubbs2) and Manoj Pandikunta (mkp6)"
+date: "5/5/2021"
+output: html_document
+---
+
+## TEAM
+
+We collaborated on all aspects of this assignment. 
+
+## Introduction
+
+This purpose of this project was to design and implement a movie recommendation 
+application. The dataset used for this project is taken from a Netflix competition.
+The project comprises two systems of prediction. The first, system 1, is predicated
+on the selection of a particular genre. The second, system 2, is driven by user 
+ratings of numerous films. 
+
+***
+
+## System 1
+
+**Scheme 1**
+
+Initially, we planned to simply, and more naively, recommend the top several 
+popular movies for the genre selected by the user. In this case popular was
+going to be defined on the number of ratings a movie received of 3 stars or 
+above. Obviously, this seemed a bit to simplistic, so scheme 2 was subsequently
+devised. 
+
+**Scheme 2 (Implemented)**
+
+Again, this scheme starts by accepting the user's preferred genre as an input value.
+Rankings are based on how popular a movie is per genre. Popularity is based on how
+many rankings a particular movie received within the genre. 
+<br />
+
+*** 
+
+## System 2
+
+**Scheme 1**
+We originally attempted to implement an algorithm based on IBCF. However, we 
+found this approach to be inferior that of the UBCF method implemented in scheme 2. 
+
+**Scheme 2 (Implemented)**
+
+We ultimately decided on implementing a UBCF scheme. 
+
+<br />
+
+*** 
+
+## Code Repository
+
+[Link to Source Code](https://github.com/dubbs1515/PSL_Final)
+
+<br />
+
+***
+
+## References 
+
+* Code snippets provided by professor
+* https://www.rdocumentation.org/packages/recommenderlab/ 
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
